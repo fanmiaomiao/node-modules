@@ -1,0 +1,9 @@
+{
+  "runMode": "dev",
+  "dbUrl":"mongodb://localhost:27017/ople",
+  "port": {
+    "dev": "3000",
+    "joint": "13000",
+    "prod": "3000"
+  }
+}
