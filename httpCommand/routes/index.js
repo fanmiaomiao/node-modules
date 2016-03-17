@@ -1,11 +1,9 @@
-/**
- * Created by miaomiao on 2016/3/15.
- */
-function Controller(router) {
-    router.get('/', function(req, res) {
-        res.render('index',{
-            title:'httpCommand'
-        });
-    });
-};
-module.exports = Controller;
+var express = require('express');
+var router = express.Router();
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
+
+module.exports = router;
