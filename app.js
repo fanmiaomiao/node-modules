@@ -7,9 +7,12 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var debug = require('debug')('node-module:server');
 var http = require('http');
+
+var log4js = require('log4js');
+var log4jsConfig = require('./log4js.json');
+log4js.configure(log4jsConfig);
 
 
 var routes = require('./routes/index');
@@ -123,7 +126,6 @@ app.use(function(req, res, next) {
     next(err);
 });
 
-// error handlers
 
 // development error handler
 // will print stacktrace

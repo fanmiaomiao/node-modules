@@ -1,0 +1,13 @@
+{
+  "appenders":[
+    {
+      "type":"console"
+    },{
+      "type":"dateFile",
+      "filename":"./logs/info_log/date",
+      "alwaysIncludePattern":true,
+      "pattern":"-yyyy-mm-dd.log"
+    }
+  ],
+  "replaceConsole":true
+}
